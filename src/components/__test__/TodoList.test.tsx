@@ -51,7 +51,7 @@ describe("Testing in <TodoList/>", () => {
 
   test("should call onDeleteTodo when delete button of Todo 2 is clicked", () => {
     const onDeleteTodo = jest.fn();
-    const { getByTestId } = render(
+    render(
       <TodoList
         todos={mockTodos}
         onToggleTodo={jest.fn()}
@@ -59,7 +59,7 @@ describe("Testing in <TodoList/>", () => {
       />
     );
 
-    const deleteButtonTodo2 = getByTestId("delete-btn-2");
+    const deleteButtonTodo2 = screen.getAllByRole("button")[1];
 
     fireEvent.click(deleteButtonTodo2);
 

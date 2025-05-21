@@ -19,7 +19,6 @@ exports[`Testing in <TodoItem /> component should be equal to snapshot 1`] = `
         </p>
         <button
           class="p-2 border rounded-lg shadow-md bg-red-500 hover:bg-red-600 cursor-pointer"
-          data-testid="delete-btn-1"
           type="button"
         >
           <svg
@@ -71,7 +70,6 @@ exports[`Testing in <TodoItem /> component should be equal to snapshot 1`] = `
       </p>
       <button
         class="p-2 border rounded-lg shadow-md bg-red-500 hover:bg-red-600 cursor-pointer"
-        data-testid="delete-btn-1"
         type="button"
       >
         <svg

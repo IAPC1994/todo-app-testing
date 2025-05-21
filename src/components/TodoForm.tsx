@@ -20,16 +20,19 @@ export const TodoForm = ({ onAddTodo }: Props) => {
   return (
     <form
       onSubmit={handleSubmit}
+      data-testid="todo-form"
       className="w-full flex flex-col md:flex-row gap-5 justify-between"
     >
       <input
         type="text"
+        data-testid="todo-input"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="New task..."
         className="bg-neutral-200 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none"
       />
       <button
+        data-testid="add-button"
         type="submit"
         className="flex items-center gap-2 bg-indigo-600 cursor-pointer hover:bg-indigo-700 px-4 py-2 font-bold rounded-lg transition"
       >
