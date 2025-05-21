@@ -72,7 +72,7 @@ describe("useTodos Testing", () => {
     );
   });
 
-  test("should return null if the localStorage is empty", () => {
+  test("should initialize with empty list if localStorage is empty", () => {
     Storage.prototype.getItem = jest.fn(() => null);
     const { result } = renderHook(() => useTodos());
 

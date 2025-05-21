@@ -26,6 +26,7 @@ export const TodoItem = ({ todo, onToggleTodo, onDeleteTodo }: Props) => {
         {title}
       </p>
       <button
+        type="button"
         onClick={() => onDeleteTodo(id)}
         className="p-2 border rounded-lg shadow-md bg-red-500 hover:bg-red-600 cursor-pointer"
       >
