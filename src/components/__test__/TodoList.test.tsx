@@ -1,6 +1,6 @@
+import { fireEvent, render, screen } from "@testing-library/react";
 import { Todo } from "@/interfaces";
 import { TodoList } from "../TodoList";
-import { fireEvent, render, screen } from "@testing-library/react";
 
 const mockTodos: Todo[] = [
   {
